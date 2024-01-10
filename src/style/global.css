@@ -3,3 +3,13 @@
     padding: 0;
     margin: 0;
 }
+.container{
+      width: 100vw;
+  height: 100vh;
+  /* background-color: darksalmon; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

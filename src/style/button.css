@@ -1,11 +1,21 @@
 .calcBtn{
-      width: 23%;
-  height: 18%;
-  background-color: cornflowerblue;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: antiquewhite;
-  font-size: 32px;
+  font-size: 48px;
+}
+.extra .calcBtn{
+  width: 32%;
+  background-color: darkgrey;
+}
+.num .calcBtn{
+  width: 32%;
+  background-color: darkgray;
+}
+.op .calcBtn{
+  background-color: orange;
+  width: 95%;
+  height: 20%;
 }

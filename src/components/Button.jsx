@@ -1,10 +1,12 @@
 import "../style/button.css"
-const Button = (prop) => {
-    let character = prop.text;
+const Button = (props) => {
+    let character = props.text;
+    let setVal = props.setVal;
+    
     return (
-        <div className="calcBtn">
-            <p>{ character}</p>
-        </div>
-    )
+      <div className="calcBtn" onClick={() => setVal((a)=>a+character)}>
+        {character}
+      </div>
+    );
 }
 export default Button

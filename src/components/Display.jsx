@@ -1,8 +1,9 @@
 import "../style/display.css"
-const Display = () => {
+const Display = (prop) => {
+    let val=prop.value
     return (
-        <div>
-
+        <div className="disp">
+            {val}
         </div>
     )
 }

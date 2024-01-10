@@ -2,34 +2,16 @@ let num1 = "";
 let num2 = "";
 let answer = "";
 let operation = "";
- export const content = [
-  "AC",
-  "+/-",
-  "%",
-  "/",
-  "7",
-  "8",
-  "9",
-  "x",
-  "4",
-  "5",
-  "6",
-  "-",
-  "1",
-  "2",
-  "3",
-  "+",
-  "0",
-  ".",
-  "=",
-];
+export const content = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "."];
+export const extra = ["AC", "+/-", "%"];
+export const ops = ["/", "x", "-", "+", "="];
 const writeOnClick = (a) => {
   text.innerText += a;
 };
 const reset = () => {
   text.innerText = "";
   num1 = "";
-  num2=""
+  num2 = "";
   operation = "";
 };
 const checkNum = (num) => {
@@ -44,21 +26,20 @@ const checkNum = (num) => {
 const checkOp = (op) => {
   let result = true;
 
-  if(op == "/" || op == "x" || op == "-" || op == "+"){
+  if (op == "/" || op == "x" || op == "-" || op == "+") {
     operation = op;
     console.log(operation);
-    if(!(answer=="")){
-      text.innerText="";
+    if (!(answer == "")) {
+      text.innerText = "";
     }
-  }else{
+  } else {
     result = false;
-
   }
   console.log(operation);
   return result;
 };
 const nextNum = () => {
-  if (!(num1 == "") && answer=="") {
+  if (!(num1 == "") && answer == "") {
     calculate();
   } else {
     num1 = Number(text.innerHTML);
