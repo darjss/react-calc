@@ -6,11 +6,12 @@
   color: antiquewhite;
   font-size: 48px;
 }
+
 .extra .calcBtn{
   width: 32%;
   background-color: darkgrey;
 }
-.num .calcBtn{
+.num .normal{
   width: 32%;
   background-color: darkgray;
 }
@@ -18,4 +19,8 @@
   background-color: orange;
   width: 95%;
   height: 20%;
+}
+.wide{
+  width: 64%;
+    background-color: darkgrey;
 }
